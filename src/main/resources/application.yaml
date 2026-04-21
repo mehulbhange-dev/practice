@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: practice
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/employeedb
+      auto-index-creation: true
+
+server:
+  port: 8081
