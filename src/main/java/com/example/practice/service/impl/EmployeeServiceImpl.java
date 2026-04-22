@@ -31,7 +31,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public EmployeeRecord getEmployeeById(String id) {
-        Employee employee = this.employeeRepository.findById(id).orElse(null);
+        Employee employee = this.employeeRepositor.findById(id).orElse(null);
         log.info("[getEmployeeById] employee {} ", employee);
         if (employee != null)
             return this.employeeMapper.toDTO(employee);
